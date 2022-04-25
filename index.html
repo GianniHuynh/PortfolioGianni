@@ -1,0 +1,480 @@
+<!--HTML Portfolio By Gianni HUYNH - All Rights Reserved © 2022 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--Animate on scroll (AOS)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+    
+    
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="src/assets/favicon.ico" />
+    <title>Gianni Huynh</title>
+</head>
+<body>
+    <section class="layout">
+
+
+    <!--Boutton de retour haut de page Desktop-->
+    <a href="#top" class = "hidden md:block">
+        <div id = "scrollUp" class = "flex items-center justify-center drop-shadow-2xl" >
+            <img src="src/assets/arrow_up.png" class = "w-5/12 h-5/12 " />
+        </div>
+    </a>
+
+    <!--Boutton de retour haut de page Mobile-->
+    <a href="#top" class = "block md:hidden">
+      <div id = "scrollUpMobile" class = "flex items-center justify-center drop-shadow-2xl" >
+          <img src="src/assets/arrow_up.png" class = "w-5/12 h-5/12 " />
+      </div>
+  </a>
+    <!-- Zone du header -->
+    <div class="header  p-8 flex  items-center mb-32 md:mb-0" id = "#top">
+
+        <div class = " w-full ">
+        <img src="src/assets/logo_gianni.svg" alt = "Gianni's logo" class = "md:w-8 md:h-8  w-6 h-6"/>
+        </div>
+
+            <ul class = " flex md:space-x-8 space-x-4  md:text-xl ">
+              <a class = "hover:text-teal-500" href = "#propos"><li>A&nbsp;&nbsp;Propos</li></a>
+              <a class = "hover:text-teal-500" href = "#competences"><li>Compétences</li></a>
+              <a class = "hover:text-teal-500" href = "#contact"><li>Contact</li></a>
+            </ul>
+        
+
+        </div>
+
+    <!-- Zone "main" (contenu du site) -->
+    <div class="main p-8  ">
+
+        <!--Welcome Page-->
+        <h1 class = "extraFont text-center md:text-left md:text-8xl text-6xl md:pt-24 mb-4 md:mb-8" data-aos="fade-right" data-aos-duration="1300">Je m'appelle <a class = "text-teal-500 ">Gianni</a>.</h1>
+        <h2 class = "extraFont text-center md:text-left md:text-5xl text-xl mb-12 md:mb-8" data-aos="fade-right" data-aos-duration="800">Et je suis étudiant en développement informatique.</h2>
+       
+        <div class = "flex justify-center md:justify-start space-x-8 md:space-x-12 md:mb-20 mb-32" data-aos="fade-up" data-aos-duration="300">
+            <a href="https://github.com/GianniHuynh" target="_blank"><img src = "src/assets/github_logo.png" class = "w-6 h-6 md:w-8 md:h-8"  alt = "github logo"  /></a>
+            <a href="https://www.linkedin.com/in/gianni-huynh-1b9aa41b9/" target="_blank"><img src = "src/assets/linkedin_logo.png" class = "w-6 h-6 md:w-8 md:h-8"  alt = "linkedin logo"/></a>
+            <a href="https://twitter.com/GianniHynh" target="_blank"><img src = "src/assets/twitter_logo.png" class = "w-6 h-6 md:w-8 md:h-8"  alt = "twitter logo" /></a>
+            
+        </div>
+
+        <div class = "flex flex-col md:flex-row md:space-x-12 mb-40 md:mb-14  "> 
+            <button onclick="window.location.href = '#realisations';" class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-7 pr-7 font-bold rounded text-xl mb-5 md:mb-0 " data-aos="fade-up" data-aos-duration="800" >Réalisations</button>
+            <button onclick="window.location.href = '#cv';" class = " pt-2 pb-2 pl-7 pr-7 font-bold text-teal-500 border-2 border-teal-500 rounded text-xl hover:bg-teal-600 hover:border-teal-600 hover:text-white" data-aos="fade-up" data-aos-duration="1200">Télécharger CV</button>
+        </div>
+
+        <!--About me Page-->
+        <div class = " md:pt-14 " id = "propos">
+            <h3 class = "extraFont text-6xl md:text-7xl  text-center mb-8 md:mb-12 " data-aos="fade-up" >A <a class = "text-teal-500 ">Propos</a>.</h3>
+            <img src = "src/assets/about_picture.png" alt = "About picture Gianni" class = "mb-12 md:w-80 w-40 md:h-80 h-40 mx-auto" data-aos="zoom-out-up"/>
+
+            <!--First Round-->
+            <div class = "md:visible invisible firstRound rounded-full bg-gradient-to-r from-teal-700 to-teal-500 absolute w-80 h-80" data-aos="fade-up"></div> 
+
+            <!--Second Round-->
+            <div class = "md:visible invisible secondRound rounded-full bg-gradient-to-r from-teal-700 to-teal-500 absolute w-80 h-80" data-aos="fade-down"></div> 
+
+            <p class = " md:text-xl md:text-justify text-left bg-gradient-to-r from-teal-600 to-teal-500 p-8 rounded-lg md:mr-80 md:ml-80" data-aos="zoom-in" data-aos-duration="800">
+                Je m'appelle Gianni Huynh et j'ai 19 ans. Je suis un passionné d'informatique et plus spécifiquement de développement web 
+                (front-end et back-end). J'ai décidé de créer ce
+                portfolio pour partager les différents projets web que j'ai pu mener seul ou en équipe ! Suite à l'obtention de mon BTS SNIR (Systèmes Numériques option Informatique et Réseau), je prévois d'intégrer le Bachelor "Responsable en ingénierie des logiciels" du CESI au sein du campus de Toulouse.
+                C'est donc dans cette optique que je recherche actuellement une alternance dans ce domaine pour septembre prochain. 
+                Si vous appréciez ce que je fais, vous pouvez me contacter en accédant à la partie "contact".  </p>
+            
+        </div>
+
+        <!--My skills Page-->
+        <div class = "pt-28" id = "competences">
+            <h3 class = "extraFont text-4xl md:text-7xl  text-center mb-8 md:mb-12" data-aos="fade-up" >Mes <a class = "text-teal-500 ">Compétences</a>.</h3>
+
+            <p class = "mb-12 md:text-center md:text-2xl" data-aos="fade-up" data-aos-duration="300">Voici une vue d'ensemble de mes languages de programation, framework, technologies de prédilection : </p>
+
+            <!--Phone version-->
+            <!--Front-end part-->
+            <div class = "rounded border-4 border-teal-500 p-2 mb-12 md:hidden" data-aos="fade-up" data-aos-duration="800">
+                <h4 class = "extraFont text-4xl text-center">Front-end</h4>
+                <div class = "flex justify-around mt-6 mb-6  ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/html.png" alt = "html logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/css.png" alt = "css logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6 ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/js.png" alt = "js logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/tailwind.png" alt = "tailwind logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6  ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/vuejs.png" alt = "vuejs logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/electron.png" alt = "electron logo"/>
+
+                </div>   
+            </div>
+
+            <!--Back-end part-->
+            <div class = "rounded border-4 border-teal-500 p-2 mb-12 md:hidden" data-aos="fade-up" data-aos-duration="800">
+                <h4 class = "extraFont text-4xl  text-center">Back-end</h4>
+                <div class = "flex justify-around mt-6 mb-6  ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/nodejs.png" alt = "nodejs logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/express.png" alt = "express js logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6 ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/mysql.png" alt = "mysql logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/mongodb.png" alt = "mongodb logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6  ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/socketio.png" alt = "socketio logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/linux.png" alt = "linux logo"/>
+
+                </div>   
+            </div>
+
+            <!--Other part-->
+            <div class = "rounded border-4 border-teal-500 p-2 mb-20 md:hidden" data-aos="fade-up" data-aos-duration="800">
+                <h4 class = "extraFont text-4xl  text-center">Autres</h4>
+                <div class = "flex justify-around mt-6 mb-6  ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/c++.png" alt = "C++ logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/python.png" alt = "python logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6 ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/vscode.png" alt = "vscode logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/git.png" alt = "git logo"/>
+
+                </div> 
+            </div>
+
+
+            <!--Desktop version-->
+
+            <div class = "flex justify-around ">
+                <!--Front-end-->
+            <div class = "rounded border-4 border-teal-500 p-2  md:rounded-lg mb-12 hidden md:block" data-aos="fade-up" data-aos-duration="300">
+                <h4 class = "extraFont text-4xl  text-center md:text-3xl ">Front-end</h4>
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-12">
+                    <img class = "w-20 h-20" src = "src/assets/techno/html.png" alt = "html logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/css.png" alt = "css logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/js.png" alt = "js logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-12">
+                    <img class = "w-20 h-20" src = "src/assets/techno/tailwind.png" alt = "tailwind logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/vuejs.png" alt = "vue logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/electron.png" alt = "electron logo"/>
+
+
+                </div> 
+            </div>
+
+            <!--Back-end-->
+            <div class = "rounded border-4 border-teal-500 p-2  md:rounded-lg mb-12 hidden md:block" data-aos="fade-up" data-aos-duration="500">
+                <h4 class = "extraFont text-4xl  text-center md:text-3xl ">Back-end</h4>
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-12 ">
+                    <img class = "w-20 h-20" src = "src/assets/techno/nodejs.png" alt = "nodejs logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/express.png" alt = "express js logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/mysql.png" alt = "mysql logo"/>
+
+                </div>
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-12">
+                    <img class = "w-20 h-20" src = "src/assets/techno/mongodb.png" alt = "mongodb logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/socketio.png" alt = "socketio logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/linux.png" alt = "linux logo"/>
+
+
+                </div> 
+            </div>
+
+            <!--Other tools-->
+            <div class = "rounded border-4 border-teal-500 p-2  md:rounded-lg mb-12 hidden md:block" data-aos="fade-up" data-aos-duration="800">
+                <h4 class = "extraFont text-4xl  text-center md:text-3xl ">Autres</h4>
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-10">
+                    <img class = "w-20 h-20" src = "src/assets/techno/c++.png" alt = "C++ logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/python.png" alt = "python logo"/>
+                    
+
+                </div>
+
+                <div class = "flex justify-around mt-6 mb-6 md:mt-16 md:mb-16 md:mr-10 md:ml-10 space-x-10">
+                    <img class = "w-20 h-20" src = "src/assets/techno/vscode.png" alt = "vscode logo"/>
+                    <img class = "w-20 h-20" src = "src/assets/techno/git.png" alt = "git logo"/>
+
+                </div>
+                
+            </div>
+
+
+            </div>
+
+            
+
+        </div>
+
+
+        <!--My Work Page-->
+        <div class = " md:pt-14 mb-20" id = "realisations">
+            <h3 class = "extraFont text-4xl md:text-7xl  text-center mb-8 md:mb-12 " data-aos="fade-up" >Mes <a class = "text-teal-500 ">Réalisations</a>.</h3>
+            <p class = " md:text-xl md:text-justify text-left bg-gradient-to-r from-teal-600 to-teal-500 p-8 rounded-lg md:mr-80 md:ml-80 mb-8 md:mb-16" data-aos="zoom-in" data-aos-duration="800">
+                Vous trouverez ci-dessous une selection de mes différents projets ! Vous pouvez en apprendre davantage sur ces derniers en cliquant sur le boutton correspondant au projet désiré (fonctionne uniquement sur PC) : </p>
+                
+                <div class = "w-full md:w-10/12 mx-auto"  data-aos="fade-up" data-aos-duration="1000" >
+                <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4 ">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner relative w-full overflow-hidden">
+                      <div class="carousel-item active relative float-left w-full">
+                       
+                        <img
+                          src="src/assets/My_Work/01_arch.png"
+                          class="block w-full"
+                          alt="arch beats website"
+                        />
+                        
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                          
+                          <a href="https://giannihuynh.notion.site/Arch-Beats-03ac64c547b549ab87aa10b7ff5baf9c" target="_blank"><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">Arch Beats</button> </a> 
+                          <p>HTML - CSS</p>
+                          <p>Site vitrine de musicien  - Février 2020</p>
+                          
+                          
+                        </div>
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img
+                          src="src/assets/My_Work/02_spelldice.png"
+                          class="block w-full"
+                          alt="Scpelldice website"
+                        />
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <a href="https://giannihuynh.notion.site/Spelldice-e8521b9aea6a491e979e4f6879364f27" target="_blank"><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">Spelldice</button></a>
+                            <p>HTML - CSS - Javascript - Electron.js </p>
+                            <p>Logiciel de simulation de lancers de dés - Mars 2021</p>
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img
+                          src="src/assets/My_Work/03_syracjs.png"
+                          class="block w-full"
+                          alt="Syrac JS image"
+                        />
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <a href="https://giannihuynh.notion.site/Syrac-js-87a04b894e9b463ba8a5a7343c400c1e" target="_blank"><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">Syrac.js</button></a>
+                            <p>HTML - CSS - Javascript</p>
+                            <p>Site web de calcul de suite de Syracuse - Octobre 2021</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img
+                          src="src/assets/My_Work/04_crusher.png"
+                          class="block w-full"
+                          alt="Crusher image"
+                        />
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <a href="https://giannihuynh.notion.site/Crusher-25bfcd67c86e473784d93552dd9d23f1" target="_blank" ><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">Crusher</button></a>
+                            <p>HTML - CSS - Javascript - MySQL - Node.js - Express.js</p>
+                            <p>Site web de calcul de compatibilité amoureuse - Novembre 2021</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img
+                          src="src/assets/My_Work/05_friender.png"
+                          class="block w-full"
+                          alt="Friender image"
+                        />
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <a href="https://giannihuynh.notion.site/Friender-en-cours-5f58ace7362a484bb16fd82d756b6227" target="_blank"><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">Friender</button></a>
+                            <p>HTML - CSS - Javascript - React.js - MySQL - Node.js - Express.js</p>
+                            <p>Plateforme de mise en lien d'individus - Février 2022</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item relative float-left w-full">
+                        <img
+                          src="src/assets/My_Work/06_popupchat.png"
+                          class="block w-full"
+                          alt="PopUp Chat image"
+                        />
+                        <div class="carousel-caption hidden md:block absolute text-center">
+                            <a href="https://giannihuynh.notion.site/PopUp-Chat-3058552ba3644d9abe1f40b0c5d5f953" target="_blank"><button class = " bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl ">PopUp Chat</button></a>
+                            <p>HTML - CSS - Javascript - MySQL - Node.js - Express.js</p>
+                            <p>Chat web déployable décentralisé et open-source - Mars 2022</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                </div>
+            
+            
+                
+            
+        </div>
+
+
+        <!--CV Download Page-->
+        <div class = " md:pt-14 items-center mb-32 " id = "cv">
+            <h3 class = "extraFont text-4xl md:text-7xl  text-center mb-8 md:mb-12 " data-aos="fade-up" >Télécharger mon <a class = "text-teal-500 ">CV</a>.</h3>
+
+            <p class = "mb-8 md:text-center md:text-2xl" data-aos="fade-up" data-aos-duration="300">Cliquez sur un des bouttons ci-dessous pour sélectionner la version de mon CV que vous désirez télécharger :</p>
+            <p class = "mb-12 md:text-center md:text-2xl md:mb-32" data-aos="fade-up" data-aos-duration="300">(La version claire est plus économique pour l'impression !)</p>
+
+            <!-- Download buttons Phone-->
+            <div class = "flex flex-col md:flex-row block md:hidden">
+                <a href="src/cv/gianni_huynh_cv_light.pdf" target="_blank" class=" bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl text-black flex  justify-center mx-auto   w-2/3 items-center md:w-1/6 " data-aos="fade-up" data-aos-duration="300">
+                   
+                    <img src="src/assets/light_logo.png" class = "w-8 h-8 mr-4"/>
+                    CV Clair
+                
+                </a>
+                
+                <a href="src/cv/gianni_huynh_cv_dark.pdf" target="_blank" class=" bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl text-black flex  justify-center w-2/3 mx-auto items-center md:w-1/6" data-aos="fade-up" data-aos-duration="500">
+                    <img src="src/assets/dark_logo.png" class = "w-8 h-8 mr-4"/>
+                    CV Sombre</a>
+            </div>
+
+            <!--Download buttons Desktop-->
+
+            <div class = "hidden md:block md:flex justify-center space-x-16 ">
+              
+              <a href="src/cv/gianni_huynh_cv_light.pdf" target="_blank" class = "bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl text-black w-2/3  md:w-1/6 flex justify-center items-center">
+                <img src="src/assets/light_logo.png" class = "w-8 h-8 mr-4"/>
+                CV Clair
+              </a>
+              
+              
+              <a href="src/cv/gianni_huynh_cv_dark.pdf" target="_blank" class = "bg-teal-500 hover:bg-teal-600 pt-2 pb-2 pl-5 pr-5 font-bold rounded text-xl mb-5 md:mb-2 hover:drop-shadow-2xl text-black w-2/3 md:w-1/6 flex justify-center items-center">
+                <img src="src/assets/dark_logo.png" class = "w-8 h-8 mr-4"/>
+                CV Sombre
+              </a>
+
+            </div>
+        </div>
+
+
+        <!--Contact Page-->
+        <div class = " md:pt-14 items-center " id = "contact">
+            <h3 class = "extraFont text-5xl md:text-7xl  text-center mb-8 md:mb-12 " data-aos="fade-up" >Contact<a class = "text-teal-500 ">.</a></h3>
+            <div class = " md:text-xl text-lg text-left md:text-justify border-4 border-teal-500 p-8 rounded-lg md:mr-80 md:ml-80" data-aos="zoom-in" data-aos-duration="800">
+                
+                <p>Tel : 07 82 31 23 03</p>
+                <p>Twitter : <a href="https://twitter.com/GianniHynh" class = "text-teal-500">@GianniHynh</a></p>
+                <p>GitHub : <a href = "https://github.com/GianniHuynh" class = "text-teal-500">@GianniHuynh</a></p>
+                <p>LinkedIn : <a href = "https://www.linkedin.com/in/gianni-huynh-1b9aa41b9/" class = "text-teal-500">Gianni Huynh</a></p>
+                <p>Mail : gianni.huynh@protonmail.com</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Zone du footer -->
+    <div class="footer bg-gradient-to-r from-teal-600 to-teal-500 mt-40 md:p-12 p-4 text-center text-sm">
+        <footer>
+            <p>
+            Site web conçu par Gianni HUYNH à l'aide de Tailwind CSS, Animate on Scroll et Google Fonts
+              </p>
+              
+              <p>
+                Gianni HUYNH 2022 © - All rights reserved - Contact :
+                gianni.huynh@protonmail.com
+              </p>
+              
+        </footer>
+
+
+    </div>
+
+    </section>
+
+
+    <script>
+        AOS.init();
+        
+    </script>
+      
+    
+</body>
+</html>

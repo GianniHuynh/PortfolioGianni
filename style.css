@@ -1,0 +1,99 @@
+/* CSS File of Gianni's portfolio */
+
+@font-face {
+    font-family: "LS-Regular";
+    src: url("src/fonts/LS-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LS-Extra";
+    src: url("src/fonts/LS-ExtraBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  background-image: url("src/assets/welcome_background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'LS-Regular', sans-serif;
+  color: white;
+  background-color: #080808;
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+
+.layout {
+    
+  
+    display: grid;
+    grid:
+      "header" auto
+      "main" 1fr
+      "footer" auto
+      / 1fr;
+    gap: 8px;
+}
+  
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.extraFont{ 
+    font-family: 'LS-Extra', sans-serif;
+}
+
+.firstRound{
+    top: 135%;
+    left: 93%;
+}
+
+.secondRound{ 
+    top: 100%;
+    right: 90%;
+
+}
+
+#scrollUp
+{
+    z-index: 2;
+    background-color: rgb(13 148 136); 
+    width: 60px;
+    height: 60px;
+    text-indent: -99999px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: -200px;
+    cursor: pointer;
+
+
+}
+
+#scrollUpMobile
+{
+    z-index: 2;
+    background-color: rgb(13 148 136); 
+    width: 60px;
+    height: 60px;
+    text-indent: -99999px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: -200px;
+    cursor: pointer;
+
+
+}

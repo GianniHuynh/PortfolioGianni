@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="1500" viewBox="0 0 1500 1500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #38e4ae;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="807.438" y="970.344" width="375.722" height="376.656" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#14b7a5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="i" class="cls-1" d="M666.205,1324.42V551.308H333.8V1324.42H666.205ZM633.72,378.98q54.141-53.672,54.141-128.063,0-50.835-25.422-92.281A196.11,196.11,0,0,0,595.58,92.245q-41.437-24.937-91.344-24.953-76.266,0-129.469,54.625t-53.2,129q0,74.391,53.2,128.063t129.469,53.672Q579.565,432.652,633.72,378.98Z"/>
+  <path id="_." data-name="." class="cls-2" d="M1128.07,1291.93q55.08-55.08,55.09-132.31,0-79.08-55.09-134.17t-133.237-55.1q-77.226,0-132.312,55.1-55.1,55.08-55.094,134.17,0,77.22,55.094,132.31Q917.6,1347,994.833,1347.01,1072.979,1347.01,1128.07,1291.93Z"/>
+</svg>
